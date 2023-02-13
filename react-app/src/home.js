@@ -135,7 +135,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   appbar: {
-    background: '#be6a77',
+    background: '#87CEEB',
     boxShadow: 'none',
     color: 'white'
   },
