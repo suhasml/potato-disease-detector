@@ -69,8 +69,9 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     maxWidth: 400,
     height: 500,
-    backgroundColor: 'transparent',
-    boxShadow: '0px 9px 70px 0px rgb(0 0 0 / 30%) !important',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    boxShadow: '0px 9px 20px 0px rgba(0, 0, 0, 0.2)',
+    border: '2px solid darkgreen',
     borderRadius: '15px',
   },
   imageCardEmpty: {
@@ -135,7 +136,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   appbar: {
-    background: '#87CEEB',
+    background: 'lightgreen',
     boxShadow: 'none',
     color: 'white'
   },
@@ -211,12 +212,12 @@ export const ImageUpload = () => {
   return (
     <React.Fragment>
       <AppBar position="static" className={classes.appbar}>
-        <Toolbar>
-          <Typography className={classes.title} variant="h6" noWrap>
+      <Toolbar>
+          <Typography className={classes.title} variant="h6" noWrap style={{color:'black'}}>
             Potato Disease Detector
           </Typography>
           <div className={classes.grow} />
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Typography className={classes.title} variant="h6" noWrap style={{color:'black'}}>
             By: Suhas M L
           </Typography>
         </Toolbar>
@@ -241,7 +242,7 @@ export const ImageUpload = () => {
                 />
               </CardActionArea>
               }
-              {!image && <CardContent className={classes.content}>
+              {!image && <CardContent className={classes.content} style={{backgroundColor: "rgba(0, 0, 0, 0.5)"}}>
                 <DropzoneArea
                   acceptedFiles={['image/*']}
                   dropzoneText={"Drag and drop an image of a potato plant leaf to process"}
