@@ -15,3 +15,6 @@ To use the Potato Disease Detector, simply visit the deployed React frontend and
 
 ## Conclusion
 The Potato Disease Detector is a powerful tool for identifying potato diseases, helping farmers and researchers make informed decisions about their crops. The deployment of both the API and the React frontend to GCP makes it accessible to anyone with an internet connection, providing a valuable resource for the agriculture industry.
+
+## References
+https://youtube.com/playlist?list=PLeo1K3hjS3ut49PskOfLnE6WUoOp_2lsD
